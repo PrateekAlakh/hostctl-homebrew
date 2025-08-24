@@ -10,13 +10,18 @@ class Hostctl < Formula
   depends_on "python@3.12"
 
   resource "typer" do
-    url "https://files.pythonhosted.org/packages/56/67/bda961c1dd1bac06c0f62b321a7f9b3e518d9f242fef8f0a72c625c114d0/typer-0.12.3.tar.gz"
-    sha256 "cb95e1a985946c706a0417fef6b4d13b98c9b3e2745696955bb287f47225e7a1"
+    url "https://files.pythonhosted.org/packages/source/t/typer/typer-0.12.3.tar.gz"
+    sha256 "49e73131481d804288ef62598d97a1ceef3058905aa536a1134f90891ba35482"
+  end
+
+  resource "rich" do
+    url "https://files.pythonhosted.org/packages/source/r/rich/rich-13.9.3.tar.gz"
+    sha256 "bc1e01b899537598cf02579d2b9f4a415104d3fc439313a7a2c165d76557a08e"
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/6e/89/859c8f2c38daae2cb7c3d245eb6220137d7853fb57d50e3209adf3133b97/click-8.1.7.tar.gz"
-    sha256 "ca9853ad459e787e2192211578cc907e7594e7dfaf8a1a788f2f0a5e6f3b1c2c"
+    url "https://files.pythonhosted.org/packages/source/c/click/click-8.1.7.tar.gz"
+    sha256 "ca9853ad459e787e2192211578cc907e7594e294c7ccc834310722b41b9ca6de"
   end
 
   def install
