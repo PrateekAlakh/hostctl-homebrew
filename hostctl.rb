@@ -7,16 +7,16 @@ class Hostctl < Formula
   sha256 "6bb659211deb5bec59386eab2b844505352437247276c402f1ebc5e0aab86474"
   license "MIT"
 
-  depends_on "python@3.11"
+  depends_on "python@3.12"
 
   resource "typer" do
-    url "https://files.pythonhosted.org/packages/8a/11/ea0e5e01c5d7a8948f0215b2b9a7112477bb4a7bbed6d9dd85042b05771c/typer-0.12.3.tar.gz"
-    sha256 "e7fc536b5c75a47651c0f6178529e85ca27c2aada52fa57151a929d61925dcb5"
+    url "https://files.pythonhosted.org/packages/56/67/bda961c1dd1bac06c0f62b321a7f9b3e518d9f242fef8f0a72c625c114d0/typer-0.12.3.tar.gz"
+    sha256 "cb95e1a985946c706a0417fef6b4d13b98c9b3e2745696955bb287f47225e7a1"
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/9d/f4/79a003e35e90f25d1c4c4d47dbbc2a87de110674af78e6a45a2790a8e36b/click-8.1.7.tar.gz"
-    sha256 "ca9853ad4606f3fda57f6be6b8be4748f9a0b3b75d39bbbc30ef2d8aa5f5f05e"
+    url "https://files.pythonhosted.org/packages/6e/89/859c8f2c38daae2cb7c3d245eb6220137d7853fb57d50e3209adf3133b97/click-8.1.7.tar.gz"
+    sha256 "ca9853ad459e787e2192211578cc907e7594e7dfaf8a1a788f2f0a5e6f3b1c2c"
   end
 
   def install
@@ -24,6 +24,6 @@ class Hostctl < Formula
   end
 
   test do
-    system "#{bin}/hostctl", "--help"
+    system bin/"hostctl", "--help"
   end
 end
